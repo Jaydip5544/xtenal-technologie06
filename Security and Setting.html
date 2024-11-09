@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sign-Up Personal Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+
+
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+<!--   <link rel="stylesheet" href="https://songhay.blob.core.windows.net/shared-styles-bootstrap/css/bootstrap.min.css" />
+ -->
+    <!-- Flaticon Cdn -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+<header>
+
+<nav class="nav">
+  <i class="uil uil-bars navOpenBtn"></i>
+  <a href="index.html" class="logo">
+    <img class="logo-01" src="logo.png">  
+   <!--  <span class="LOGO-SPAN">Xtenal Technologies</span> -->
+  </a>
+
+
+  <ul class="nav-links mb-0 ml-auto">
+    <i class="uil uil-times navCloseBtn"></i>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="#">career</a></li>
+    <li><a href="#">Investor Relations</a></li>
+    <li><a href="Contact.html">Contact Us</a></li> 
+   <!--  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle pl-0" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contact Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Contact Us</a>
+        </div>
+      </li> -->   
+  </ul>
+
+
+  <i class="uil uil-search search-icon" id="searchIcon"></i>
+  <div class="search-box">
+    <i class="uil uil-search search-icon"></i>
+    <input type="text" placeholder="Search here..." />
+  </div>
+
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu "> 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-user"></i>
+             <img class="" src="user.png"> 
+          </a>
+          <ul class="dropdown-menu dropdown-nav-menu-info p-0" aria-labelledby="navbarDropdown">
+            <li class="name-mail-col-info">               
+                  <span class="dropdown-menu-name-info">Jane Doe</span>
+                  <span class="dropdown-menu-email-info">jane@example.com</span>               
+              </li>
+            <li class="mt-2">
+              <a class="dropdown-item" href="#"><i class="fi fi-rr-shield-check"></i> Privacy </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="fi fi-rr-user-lock"></i> Security and Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="fi fi-rr-info"></i> Help</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="fi fi-rr-english"></i> Language</a>
+            </li>
+            <li class="mb-2">
+              <a class="dropdown-item" href="#"><i class="fi fi-rr-bell"></i> Notification</a>
+            </li>
+            <!--  <li><hr class="dropdown-divider"></li>
+            <li class="mb-2"><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a></li> -->
+          </ul>
+        </li>
+     </ul>
+</nav>
+</header>
+
+
+
+
+
+<div class="container-xl px-4 container-info">
+
+    <hr class="mt-0 mb-4">
+    <div class="row">
+        <div class="col-xl-4">
+            <!-- Profile picture card-->
+            <div class="card mb-4 mb-xl-0">
+                <div class="card-header">Profile Picture</div>
+                <div class="card-body text-center">
+                    <!-- Profile picture image-->
+                    <img class="img-account-profile rounded-circle mb-2" src="user.png">
+                    <!-- Profile picture help block-->
+                    <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
+                    <!-- Profile picture upload button-->
+                    <button class="btn btn-primary" type="button">Upload new image</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8">
+            <!-- Account details card-->
+            <div class="card mb-4">
+                <div class="card-header">Account Details</div>
+                <div class="card-body">
+                    <form>                     
+                        <!-- Form Row-->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (first name)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputFirstName">First name</label>
+                                <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="Valerie">
+                            </div>
+                            <!-- Form Group (last name)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLastName">Last name</label>
+                                <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="Luna">
+                            </div>
+                        </div>
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (first name)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputFirstName">Password</label>
+                                <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your Password" value="Valerie">
+                            </div>
+                            <!-- Form Group (last name)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLastName">Confirm Password</label>
+                                <input class="form-control" id="inputLastName" type="text" placeholder="Enter your Confirm Password" value="Luna">
+                            </div>
+                        </div>
+                        <!-- Form Row        -->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (organization name)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputOrgName">Organization name</label>
+                                <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap">
+                            </div>
+                            <!-- Form Group (location)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLocation">Location</label>
+                                <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA">
+                            </div>
+                        </div>
+                        <!-- Form Group (email address)-->
+                        <div class="mb-3">
+                            <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                            <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com">
+                        </div>
+                        <!-- Form Row-->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (phone number)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputPhone">Phone number</label>
+                                <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="555-123-4567">
+                            </div>
+                            <!-- Form Group (birthday)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputBirthday">Birthday</label>
+                                <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday" value="06/10/1988">
+                            </div>
+                        </div>
+                        <!-- Save changes button-->
+                        <button class="btn btn-primary" type="button">Save changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  /* ////////////////////////////// header start ////////////////////////////// */
+  const nav = document.querySelector(".nav"),
+  searchIcon = document.querySelector("#searchIcon"),
+  navOpenBtn = document.querySelector(".navOpenBtn"),
+  navCloseBtn = document.querySelector(".navCloseBtn");
+
+searchIcon.addEventListener("click", () => {
+  nav.classList.toggle("openSearch");
+  nav.classList.remove("openNav");
+  if (nav.classList.contains("openSearch")) {
+    return searchIcon.classList.replace("uil-search", "uil-times");
+  }
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+
+navOpenBtn.addEventListener("click", () => {
+  nav.classList.add("openNav");
+  nav.classList.remove("openSearch");
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+navCloseBtn.addEventListener("click", () => {
+  nav.classList.remove("openNav");
+});
+
+/* ////////////////////////////// header end ////////////////////////////// */
+
+/* ////////////////////////////// Dropdown start ////////////////////////////// */
+document.querySelectorAll('.dropdown-toggle').forEach(item => {
+  item.addEventListener('click', event => {
+ 
+    if(event.target.classList.contains('dropdown-toggle') ){
+      event.target.classList.toggle('toggle-change');
+    }
+    else if(event.target.parentElement.classList.contains('dropdown-toggle')){
+      event.target.parentElement.classList.toggle('toggle-change');
+    }
+  })
+});
+
+
+document.querySelectorAll('.dropdown-toggle').forEach(item => {
+  item.addEventListener('click', event => {
+ 
+    if(event.target.classList.contains('dropdown-toggle') ){
+      event.target.classList.toggle('toggle-change');
+    }
+    else if(event.target.parentElement.classList.contains('dropdown-toggle')){
+      event.target.parentElement.classList.toggle('toggle-change');
+    }
+  })
+});
+
+/* ////////////////////////////// Dropdown start ////////////////////////////// */
+
+
+
+ </script>
+
+
+</body>
+</html>

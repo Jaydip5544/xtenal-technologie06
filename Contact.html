@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+<!--   <link rel="stylesheet" href="https://songhay.blob.core.windows.net/shared-styles-bootstrap/css/bootstrap.min.css" />
+ -->
+    <!-- Flaticon Cdn -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+
+<nav class="nav">
+  <i class="uil uil-bars navOpenBtn"></i>
+  <a href="index.html" class="logo">
+    <img class="logo-01" src="logo.png">  
+   <!--  <span class="LOGO-SPAN">Xtenal Technologies</span> -->
+  </a>
+
+
+  <ul class="nav-links mb-0 ml-auto">
+    <i class="uil uil-times navCloseBtn"></i>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="#">Career</a></li>
+    <li><a href="#">Investor Relations</a></li>
+    <li class="pr-3"><a href="#">Contact Us</a></li>
+ 
+  </ul>
+
+
+  <i class="uil uil-search search-icon" id="searchIcon"></i>
+  <div class="search-box">
+    <i class="uil uil-search search-icon"></i>
+    <input type="text" placeholder="Search here..." />
+  </div>
+
+</nav>
+
+  <div class="infinity-container ">   
+    <div class="row my-5 justify-content-center">      
+      <div class="col-lg-9">
+      <h1 class="mb-3">Contact Us</h1>
+      <form>
+        <div class="row g-3">
+          <div class="col-md-6 mb-3">
+            <label for="your-name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="your-name" name="your-name" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="your-surname" class="form-label">Your Surname</label>
+            <input type="text" class="form-control" id="your-surname" name="your-surname" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="your-email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="your-email" name="your-email" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="your-subject" class="form-label">Your Subject</label>
+            <input type="text" class="form-control" id="your-subject" name="your-subject">
+          </div>
+          <div class="col-12 mb-3">
+            <label for="your-message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-md-6">
+                <button data-res="<?php echo $sum; ?>" type="submit" class="btn btn-dark w-100 fw-bold" >Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  
+
+
+<!--   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+ -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  /* ////////////////////////////// header start ////////////////////////////// */
+  const nav = document.querySelector(".nav"),
+  searchIcon = document.querySelector("#searchIcon"),
+  navOpenBtn = document.querySelector(".navOpenBtn"),
+  navCloseBtn = document.querySelector(".navCloseBtn");
+
+searchIcon.addEventListener("click", () => {
+  nav.classList.toggle("openSearch");
+  nav.classList.remove("openNav");
+  if (nav.classList.contains("openSearch")) {
+    return searchIcon.classList.replace("uil-search", "uil-times");
+  }
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+
+navOpenBtn.addEventListener("click", () => {
+  nav.classList.add("openNav");
+  nav.classList.remove("openSearch");
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+navCloseBtn.addEventListener("click", () => {
+  nav.classList.remove("openNav");
+});
+
+/* ////////////////////////////// header end ////////////////////////////// */
+
+/* ////////////////////////////// Dropdown start ////////////////////////////// */
+document.querySelectorAll('.dropdown-toggle').forEach(item => {
+  item.addEventListener('click', event => {
+ 
+    if(event.target.classList.contains('dropdown-toggle') ){
+      event.target.classList.toggle('toggle-change');
+    }
+    else if(event.target.parentElement.classList.contains('dropdown-toggle')){
+      event.target.parentElement.classList.toggle('toggle-change');
+    }
+  })
+});
+document.querySelectorAll('.dropdown-toggle').forEach(item => {
+  item.addEventListener('click', event => {
+ 
+    if(event.target.classList.contains('dropdown-toggle') ){
+      event.target.classList.toggle('toggle-change');
+    }
+    else if(event.target.parentElement.classList.contains('dropdown-toggle')){
+      event.target.parentElement.classList.toggle('toggle-change');
+    }
+  })
+});
+/* ////////////////////////////// Dropdown start ////////////////////////////// */
+
+
+
+
+ </script>
+
+
+</body>
+</html>
