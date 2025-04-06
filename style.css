@@ -638,7 +638,7 @@ figure {
   &:link {
     position: relative;
     padding: 8px 15px;
-    color: #36464e;
+    color: #fff;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
