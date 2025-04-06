@@ -35,14 +35,15 @@
 
 
   <ul class="nav-links mb-0 ml-auto">
-    <i class="uil uil-times navCloseBtn"></i>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="products.html">Products</a></li>
-    <li><a href="#">Career</a></li>
-    <li><a href="#">Investor Relations</a></li>
-    <li class="pr-3"><a href="#">Contact Us</a></li>
- 
+    <i class="uil uil-times "></i>
+    <li class=""><a class="btn-1" href="index.html">Home</a></li>
+    <li class="nav__item"><a class="btn-1" href="products.html">Products</a></li>
+    <li class="nav__item"><a class="btn-1" href="#">Career</a></li>
+    <li class="nav__item"><a class="btn-1" href="Investor-Relations.html">Investor Relations</a></li>
+    <li class="nav__item"><a class="btn-1" href="Contact.html">Contact Us</a></li>
   </ul>
+
+
 
 
   <i class="uil uil-search search-icon" id="searchIcon"></i>
@@ -53,45 +54,103 @@
 
 </nav>
 
-  <div class="infinity-container ">   
-    <div class="row mx-0 my-5 justify-content-center">      
-      <div class="col-lg-9">
-      <h1 class="mb-3">Contact Us</h1>
-      <form>
-        <div class="row g-3">
-          <div class="col-md-6 mb-3">
-            <label for="your-name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="your-name" name="your-name" required>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="your-surname" class="form-label">Your Surname</label>
-            <input type="text" class="form-control" id="your-surname" name="your-surname" required>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="your-email" class="form-label">Your Email</label>
-            <input type="email" class="form-control" id="your-email" name="your-email" required>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="your-subject" class="form-label">Your Subject</label>
-            <input type="text" class="form-control" id="your-subject" name="your-subject">
-          </div>
-          <div class="col-12 mb-3">
-            <label for="your-message" class="form-label">Your Message</label>
-            <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
-          </div>
-          <div class="col-12">
-            <div class="row">
-              <div class="col-md-6">
-                <button data-res="<?php echo $sum; ?>" type="submit" class="btn btn-dark w-100 fw-bold" >Send</button>
+<section class="ftco-section "  style="height: 100%; background-image: url(BG-4.jpg); background-size: cover; background-position: center;" class="position-relative w-100">
+
+
+
+  <div class="container h-100vh d-flex align-items-center justify-content-center">
+
+    <div class="row ">
+      <div class="col-md-12">
+        <div class="wrapper">
+          <div class="row no-gutters">
+            <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+              <div class="contact-wrap w-100 p-md-5 p-4">
+                <h3 class="mb-4 contact-tital-info">Get in touch</h3>
+                <div id="form-message-warning" class="mb-4"></div> 
+                <div id="form-message-success" class="mb-4">
+                </div>
+                <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <!-- <label class="label" for="name">Full Name</label> -->
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form-group">
+                        <!-- <label class="label" for="email">Email Address</label> -->
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <!-- <label class="label" for="subject">Subject</label> -->
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <!-- <label class="label" for="#">Message</label> -->
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="submit" value="Send Message" class="btn btn-submit-info">
+                        <div class="submitting"></div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-5 d-flex align-items-stretch ">
+              <div class="info-wrap contact-wrap-1 w-100 p-md-5 p-4 ">
+                <h3 class="white">Let's get in touch</h3>
+                <p class="mb-4 white">We're open for any suggestion or just to have a chat</p>
+                <div class="dbox w-100 d-flex align-items-start">
+                  <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-map-marker"></span>
+                  </div>
+                  <div class="text pl-3 white">
+                    <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                  </div>
+                </div>
+                <div class="dbox w-100 d-flex align-items-center">
+                  <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-phone"></span>
+                  </div>
+                  <div class="text pl-3 white">
+                    <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                  </div>
+                </div>
+                <div class="dbox w-100 d-flex align-items-center">
+                  <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-paper-plane"></span>
+                  </div>
+                  <div class="text pl-3 white">
+                    <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                  </div>
+                </div>
+                <div class="dbox w-100 d-flex align-items-center">
+                  <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-globe"></span>
+                  </div>
+                  <div class="text pl-3 white">
+                    <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </form>
-    </div>
+      </div>
     </div>
   </div>
-  
+</section>
 
 
 <!--   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
