@@ -735,3 +735,69 @@ figure {
   font-weight: 600;
   font-size: 16px;
 }
+.contact-icon{
+  color: #fff;
+}
+.contact-icon ::before{ 
+  vertical-align: super;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .btn-1 {
+     &:link {
+         position: relative;
+         padding: 8px 15px;
+         color: #000;
+         text-align: center;
+         text-decoration: none;
+         text-transform: uppercase;
+         overflow: hidden;
+         border-radius: 0;
+         transition: all 1s ease;
+         -webkit-transition: all 1s ease;
+         -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+     }  
+ }
+ 
+ .hero-tital {
+     font-size: 60px;
+     margin-left: -10px;   
+
+ }
+ .hero-tital-2 {
+     font-size: 60px;
+ }.hero-subtital {
+     font-size: 18px;
+     margin-top: 20px ;
+ }
+ .preview-card__content {
+  margin-left: 0px;
+}
+ }
+
+@media only screen and (max-width: 600px) {
+
+  .hero-tital {
+    font-size: 42px;
+    margin-left: 40px;   
+}
+.hero-tital-2 {
+    font-size: 42px;
+    
+}.hero-subtital {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+
+
+ }
+
+
+
+ 
