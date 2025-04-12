@@ -98,7 +98,13 @@ body {
   animation: slideBottomToTop 2.5s ease-out forwards;
   animation-delay: 1s;
 }
-
+h3{
+  font-weight: 700;
+}
+p{
+  font-size: 18px;
+  color: #fff;
+}
 @keyframes slideRightToLeft {
   0% {
     transform: translateX(100%);
@@ -147,6 +153,7 @@ body {
     opacity: 1;
   }
 }
+
 
 .infinity-container {
   display: flex;
