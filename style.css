@@ -440,11 +440,13 @@ figure {
     padding-top: 20px;
     row-gap: 0px;
     flex-direction: column;
-    background-color: #fff;
+        background-color: rgba(58 56 56 / 40%);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
     z-index: 100;
     padding-left: 0px;
+    backdrop-filter: blur(15px);
+    border-right: 2px solid rgb(130 130 130 / 50%);
     }
   }
 
@@ -1035,7 +1037,7 @@ color: #fff !important;
   }
   .btn-1 {
     &:link {
-      color: #000;
+      color: #fff;
     }
     &:visited {
       position: relative;
