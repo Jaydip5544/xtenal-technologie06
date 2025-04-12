@@ -1020,8 +1020,12 @@ figure {
 }
 
 
-
-
+.who-we-are-Contact {
+    background: #000000ad;
+    border-radius: 40px 40px 40px 40px;
+    border: 1px solid rgba(170, 170, 170, 0.1);
+    padding: 40px 40px 40px 40px;
+}
 
 
 
@@ -1118,6 +1122,9 @@ body{
 }
 .file-drop-zone-title{
     padding: 20px 10px !important;
+}
+.file-preview{
+  border:none !important;
 }
 .file-drop-zone .file-preview-thumbnails{
     cursor: pointer;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home Page</title>
+    <title></title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -45,6 +45,24 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
+
+
+
+
+
+        <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.2.3/css/fileinput.min.css"
+    />
+
   </head>
 
   <style></style>
@@ -58,25 +76,25 @@
       </a>
 
       <ul class="nav-links mb-0 ml-auto">
-        <li class=""><a class="btn-1 active" href="index.html">Home</a></li>
+        <li class="nav__item">
+          <a class="btn-1 active" href="index.html">Home</a>
+        </li>
         <li class="nav__item">
           <a class="btn-1" href="products.html">Products</a>
         </li>
-       
-        <li class="nav__item"><a class="btn-1 active" href="Career.html">Career</a></li>
         <li class="nav__item">
-          <a class="btn-1 " href="Who-We-Are.html">Who We Are</a> 
+          <a class="btn-1" href="#">Career</a>
         </li>
-        <li class="nav__item">  
-          <a class="btn-1 " href="Investor-Relations.html"
-            >Investor Relations</a
-          >
+        <li class="nav__item">
+          <a class="btn-1" href="About-Us.html">About Us</a>
+        </li>
+        <li class="nav__item">
+          <a class="btn-1" href="Investor-Relations.html">Investor Relations</a>
         </li>
         <li class="nav__item">
           <a class="btn-1" href="Contact.html">Contact Us</a>
         </li>
       </ul>
-
 
       <i class="uil uil-search search-icon" id="searchIcon"></i>
       <div class="search-box">
@@ -85,79 +103,115 @@
       </div>
     </nav>
   </header>
-    <div
-      style="
-        height: 100vh;
-        background-image: url(BG.jpg);
+
+
+
+
+
+
+<section class="ftco-section py-5" style="
+        height: 100%;
+        background-image: url(BG-4.jpg);
         background-size: cover;
         background-position: center;
-      "
-      class="position-relative w-100"
-    >
-      <div
-        class="position-absolute text-white d-flex flex-column align-items-center justify-content-center"
-        style="
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background-color: rgba(0, 0, 0, 0.6);
-        "
-      >
-        <h5>
-          <span class="hero-tital d-md-block">Xtenal</span>
-          <span class="hero-tital-2 d-md-block">Technologies</span>
-        </h5>
-        <p class="text-center d-none d-md-block hero-subtital">
-          Xtenal Technologies Wants to Serve The World with Our Pioneer and
-          Innovative<br />
-          Solutions For This Global World, People Can Join With Us Used our
-          <br />
-          Products and Share its Thoughts With our Platform
-        </p>
-
-        <div class="text-center"></div>
-      </div>
-    </div>
-
-
-
-
-    <div class="container text-center mb-5 mt-5">
-    <div class="row">
-        <div class="col-md-12">
-            <h4><a href="https://plugins.krajee.com/file-input" target="_blank"><b>File Upload With Sortable, Remove Options</b></a></h4>
+      ">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="info-wrap w-100 p-md-5 p-4">
+     
+   
+              <h3 class="white mt-5">Who We Are</h3>
+              <h4 class="white">Our Vision and Flagship Product: Polzet.com</h4>
+              <p class="white">
+                Founded in 2024, Xtenal Technologies is the creative force
+                behind Polzet.com, a platform that empowers users to integrate
+                interactive polls into their social content—photos, stories, and
+                thoughts—turning passive sharing into active conversations. Led
+                by Jaydipsinh Parmar, a seasoned entrepreneur with over seven
+                years of IT experience and a track record of launching
+                successful ventures like Hatanu.in and Eatick.com, Polzet is
+                positioned to capture a unique niche in the $300 billion global
+                social media market. Our platform’s innovative approach appeals
+                to both individual users seeking engagement and businesses
+                craving actionable insights, offering scalable potential across
+                diverse markets.
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="wrapper">
+              <div class="row no-gutters">
+                <div class=" order-md-last d-flex align-items-stretch">
+                  <div class="contact-wrap w-100 p-md-5 p-4">
+                    <h3 class="mb-4 contact-tital-info">Get in touch</h3>
+                    <div id="form-message-warning" class="mb-4"></div>
+                    <div id="form-message-success" class="mb-4"></div>
+                    <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                          </div>
+                        </div>
+                       
+                        <div class="col-md-12">
+
+
 
 <section class="bg-diffrent">
-    <div class="container">
+  
         <div class="row justify-content-center">
-            <div class="col-xl-8">
+      
                 <div class="file-upload-contain">
-                    <input id="multiplefileupload" type="file" accept=".jpg,.gif,.png" multiple />
+                    <input id="multiplefileupload" type="file" accept=".jpg,.gif,.png" multiple="">
                 </div>
-            </div>
+           
         </div>
-    </div>
+    
 </section>
 
 
+ <div class="col-md-12">
+                          <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-submit-info">
+                            <div class="submitting"></div>
+                          </div>
+                        </div>
 
+                          </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+    
+          
+              </div>
+            </div>
+          </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+      </div>
+    </section>
 
 
 
@@ -224,6 +278,7 @@
       /* ////////////////////////////// Dropdown start ////////////////////////////// */
 
 
+
 /*!
  * bootstrap-fileinput v5.2.3
  * http://plugins.krajee.com/file-input
@@ -286,6 +341,7 @@ $("#multiplefileupload").fileinput({
         footer: '<div class="file-thumbnail-footer">\n' + '<div class="file-detail">' + '<div class="file-caption-name">{caption}</div>\n' + '    <div class="file-size">{size}</div>\n' + "</div>" + "   {actions}\n" + "</div>",
     },
 });
+
 
 
 
