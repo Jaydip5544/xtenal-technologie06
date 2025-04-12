@@ -27,9 +27,9 @@
 
 </head>
 <body>
-<header>
+<header class="">
 
-<nav class="nav">
+<nav class="nav header-bg">
   <i class="uil uil-bars navOpenBtn"></i>
   <a href="index.html" class="logo">
     <img class="logo-01" src="logo.png">  
@@ -253,6 +253,14 @@ document.querySelectorAll('.dropdown-toggle').forEach(item => {
 
 /* ////////////////////////////// Dropdown start ////////////////////////////// */
 
+window.onscroll = function () {
+  var header = document.querySelector("header");
+  if (window.pageYOffset > 0) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+};
 
 
  </script>
