@@ -701,7 +701,7 @@ figure {
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 20px;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", serif;
   text-transform: uppercase;
 }
 
@@ -711,7 +711,7 @@ figure {
 }
 
 .preview-card__text {
-  color: #878787;
+  color: #ffffff;
   margin-bottom: 40px;
   line-height: 1.3em;
   margin-top: -30px;
@@ -1078,8 +1078,6 @@ color: #fff !important;
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
-
 button:focus,
 input:focus{
   outline: none;
@@ -1090,9 +1088,6 @@ a:hover{
   text-decoration: none;
 }
 
-body{
-  font-family: 'Nunito', sans-serif;
-}
 
 /*----------multiple-file-upload-----------*/
 .file-upload-contain{
